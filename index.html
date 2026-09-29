@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nurullah Aşcı · Mobil uygulamalar</title>
+<meta name="description" content="Nurullah Aşcı'nın mobil uygulamaları: Ehliyet Sınav Soruları 2026 ve MatchLingo: İngilizce Kelime. Google Play'de.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nurullahasci.github.io/">
+<meta property="og:title" content="Nurullah Aşcı · Mobil uygulamalar">
+<meta property="og:description" content="Ehliyet Sınav Soruları 2026 ve MatchLingo: İngilizce Kelime. Öğrenmeyi kolaylaştıran sade, Türkçe uygulamalar.">
+<meta name="theme-color" content="#F6F4EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1117" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='14' width='34' height='34' rx='10' fill='%23FECE2F'/%3E%3Crect x='26' y='6' width='34' height='34' rx='10' fill='%235E17EB'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --zemin: #F6F4EF;
+    --yuzey: #FFFFFF;
+    --cizgi: #E6E1D6;
+    --murekkep: #151B26;
+    --murekkep-2: #4A5566;
+    --golge: 0 1px 2px rgba(21, 27, 38, .06), 0 12px 32px rgba(21, 27, 38, .08);
+    --sari: #FECE2F;
+    --lacivert: #14304D;
+    --mor: #5E17EB;
+    --nane: #8FF0D6;
+    --yazi: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --zemin: #0D1117;
+      --yuzey: #161B24;
+      --cizgi: #252C38;
+      --murekkep: #EEF1F5;
+      --murekkep-2: #A7B0BE;
+      --golge: 0 1px 2px rgba(0, 0, 0, .4), 0 12px 32px rgba(0, 0, 0, .35);
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--yazi);
+    color: var(--murekkep);
+    background: var(--zemin);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  img { max-width: 100%; }
+  .kap { width: min(1120px, 100% - 32px); margin-inline: auto; }
+
+  /* Üst çubuk */
+  .ust {
+    position: sticky; top: 0; z-index: 10;
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    background: color-mix(in srgb, var(--zemin) 78%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--cizgi) 70%, transparent);
+  }
+  .ust .kap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+  .marka { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -.01em; text-decoration: none; font-size: 17px; }
+  .marka svg { flex: none; }
+  .ust nav { display: flex; gap: 4px; }
+  .ust nav a { text-decoration: none; font-weight: 600; font-size: 15px; color: var(--murekkep-2); padding: 8px 12px; border-radius: 999px; }
+  .ust nav a:hover { color: var(--murekkep); background: color-mix(in srgb, var(--murekkep) 7%, transparent); }
+
+  /* Giriş */
+  .giris { padding: 72px 0 40px; position: relative; }
+  .giris::before {
+    content: ""; position: absolute; inset: -80px 0 auto; height: 420px; z-index: -1; pointer-events: none;
+    background:
+      radial-gradient(420px 220px at 18% 40%, color-mix(in srgb, var(--sari) 22%, transparent), transparent 70%),
+      radial-gradient(420px 220px at 82% 30%, color-mix(in srgb, var(--mor) 16%, transparent), transparent 70%);
+  }
+  .etiket { display: inline-block; margin: 0 0 18px; font-size: 14px; font-weight: 700; letter-spacing: .02em; color: var(--murekkep-2);
+    padding: 6px 12px; border: 1px solid var(--cizgi); border-radius: 999px; background: var(--yuzey); }
+  h1 { margin: 0; font-size: clamp(38px, 6.4vw, 68px); line-height: 1.04; letter-spacing: -.035em; font-weight: 850; max-width: 13em; }
+  .vurgu { background: linear-gradient(90deg, var(--sari), #B79BFF) left 88% / 100% .2em no-repeat; padding-bottom: .02em; }
+  .giris .alt { margin: 22px 0 0; max-width: 58ch; font-size: clamp(17px, 2vw, 20px); color: var(--murekkep-2); }
+  .simgeler { display: flex; gap: 14px; margin-top: 32px; }
+  .simgeler a { display: block; border-radius: 22px; box-shadow: var(--golge); transition: transform .2s ease; }
+  .simgeler a:hover { transform: translateY(-3px); }
+  .simgeler img { display: block; width: 64px; height: 64px; border-radius: 18px; }
+
+  /* Uygulama kartları */
+  .uygulamalar { display: grid; gap: 28px; padding: 24px 0 24px; }
+  .kart {
+    position: relative; overflow: hidden; border-radius: 32px; color: #fff;
+    display: grid; grid-template-columns: 1.15fr .85fr; align-items: stretch; min-height: 460px;
+    box-shadow: var(--golge);
+    isolation: isolate;
+  }
+  .kart::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+  .kart.ehliyet { background: linear-gradient(140deg, #1F4470 0%, #152B45 45%, #0F1720 100%); }
+  .kart.ehliyet::after { background: radial-gradient(520px 320px at 88% 8%, rgba(254, 206, 47, .28), transparent 70%); }
+  .kart.matchlingo { background: linear-gradient(140deg, #6A2BF0 0%, #4516C4 45%, #22097A 100%); }
+  .kart.matchlingo::after { background: radial-gradient(520px 320px at 88% 8%, rgba(143, 240, 214, .26), transparent 70%); }
+
+  .kart-metin { padding: 48px 8px 48px 48px; display: flex; flex-direction: column; justify-content: center; }
+  .uygulama-simgesi { width: 76px; height: 76px; border-radius: 20px; box-shadow: 0 10px 24px rgba(0, 0, 0, .3); }
+  .kart h2 { margin: 22px 0 10px; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.08; letter-spacing: -.025em; font-weight: 850; }
+  .kart p { margin: 0; font-size: 18px; max-width: 40ch; color: rgba(255, 255, 255, .84); }
+  .ozellikler { list-style: none; padding: 0; margin: 22px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .ozellikler li { font-size: 14px; font-weight: 700; padding: 7px 12px; border-radius: 999px;
+    background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .18); }
+  .eylemler { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin-top: 30px; }
+  .dugme { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; font-size: 16px;
+    padding: 14px 20px; border-radius: 16px; transition: transform .15s ease, box-shadow .15s ease; }
+  .dugme:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0, 0, 0, .25); }
+  .dugme svg { flex: none; }
+  .ehliyet .dugme { background: var(--sari); color: var(--lacivert); }
+  .matchlingo .dugme { background: var(--nane); color: #1B1446; }
+  .ikincil { font-size: 15px; font-weight: 600; color: rgba(255, 255, 255, .82); text-decoration: underline; text-underline-offset: 3px;
+    text-decoration-color: rgba(255, 255, 255, .35); }
+  .ikincil:hover { color: #fff; text-decoration-color: #fff; }
+
+  .kart-gorsel { position: relative; display: flex; justify-content: center; align-items: flex-start; padding-top: 56px; }
+  .telefon { width: 272px; padding: 9px; border-radius: 40px; background: linear-gradient(145deg, #34373F, #0B0C10);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .45), inset 0 0 0 2px rgba(255, 255, 255, .06);
+    transform: rotate(5deg); margin-bottom: -120px; }
+  .telefon img { display: block; width: 100%; height: auto; border-radius: 31px; }
+  .matchlingo .telefon { transform: rotate(-5deg); }
+
+  /* İletişim */
+  .iletisim { padding: 56px 0 24px; }
+  .iletisim h2 { margin: 0 0 8px; font-size: clamp(28px, 3.6vw, 38px); letter-spacing: -.025em; font-weight: 850; }
+  .iletisim > .kap > p { margin: 0 0 24px; color: var(--murekkep-2); font-size: 18px; max-width: 56ch; }
+  .posta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .posta a { display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 22px; text-decoration: none;
+    background: var(--yuzey); border: 1px solid var(--cizgi); box-shadow: var(--golge); transition: transform .15s ease; min-width: 0; }
+  .posta a:hover { transform: translateY(-2px); }
+  .posta img { width: 48px; height: 48px; border-radius: 13px; flex: none; }
+  .posta strong { display: block; font-size: 16px; }
+  .posta span { display: block; font-size: 15px; color: var(--murekkep-2); overflow-wrap: anywhere; }
+
+  /* Alt */
+  .alt-bilgi { padding: 40px 0 48px; color: var(--murekkep-2); font-size: 14px; }
+  .alt-bilgi .kap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; border-top: 1px solid var(--cizgi); padding-top: 24px; }
+  .alt-bilgi a { text-decoration: none; font-weight: 600; }
+  .alt-bilgi a:hover { color: var(--murekkep); text-decoration: underline; }
+  .alt-bilgi nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+
+  a:focus-visible { outline: 3px solid #8F6BFF; outline-offset: 3px; }
+
+  @media (max-width: 860px) {
+    .kart { grid-template-columns: 1fr; min-height: 0; }
+    .kart-metin { padding: 32px 24px 8px; }
+    .kart-gorsel { padding-top: 28px; height: 330px; overflow: hidden; }
+    .telefon { width: 240px; margin-bottom: 0; }
+    .posta { grid-template-columns: 1fr; }
+    .giris { padding-top: 48px; }
+    .ust nav a { padding: 8px 10px; }
+  }
+  @media (max-width: 420px) {
+    .ust nav a:first-child { display: none; }
+    .eylemler { gap: 12px 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+  <header class="ust">
+    <div class="kap">
+      <a class="marka" href="#">
+        <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="14" width="34" height="34" rx="10" fill="#FECE2F"/><rect x="26" y="6" width="34" height="34" rx="10" fill="#5E17EB"/></svg>
+        Nurullah Aşcı
+      </a>
+      <nav aria-label="Sayfa">
+        <a href="#uygulamalar">Uygulamalar</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="giris">
+      <div class="kap">
+        <p class="etiket">Mobil uygulama geliştirici</p>
+        <h1>Öğrenmeyi <span class="vurgu">kolaylaştıran</span> mobil uygulamalar</h1>
+        <p class="alt">Ehliyet sınavına hazırlanmaktan İngilizce kelime öğrenmeye, günlük hayatta işe yarayan sade ve Türkçe uygulamalar geliştiriyorum.</p>
+        <div class="simgeler">
+          <a href="#ehliyet" aria-label="Ehliyet Sınav Soruları 2026"><img src="img/ehliyet-simge.png" alt="" width="64" height="64"></a>
+          <a href="#matchlingo" aria-label="MatchLingo: İngilizce Kelime"><img src="img/matchlingo-simge.png" alt="" width="64" height="64"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="uygulamalar" class="uygulamalar kap" aria-label="Uygulamalar">
+      <article class="kart ehliyet" id="ehliyet">
+        <div class="kart-metin">
+          <img class="uygulama-simgesi" src="img/ehliyet-simge.png" alt="" width="76" height="76">
+          <h2>Ehliyet Sınav Soruları 2026</h2>
+          <p>Çıkmış sorular, denemeler ve konu anlatımlarıyla ehliyet sınavına hazırlan.</p>
+          <ul class="ozellikler" aria-label="Öne çıkanlar">
+            <li>1000 soru</li>
+            <li>20 deneme</li>
+            <li>Konu anlatımı</li>
+            <li>Animasyonlu sorular</li>
+            <li>Trafik işaretleri</li>
+          </ul>
+          <div class="eylemler">
+            <a class="dugme" href="https://play.google.com/store/apps/details?id=com.ehliyetsorulari.ehliyetcikmisorulari" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z" fill="currentColor"/></svg>
+              Google Play'de aç
+            </a>
+            <a class="ikincil" href="https://docs.google.com/document/d/1nLZ_UXNazdST61QQ2RB4babL6DCO1spSLlADLnbJuJg/edit?usp=sharing" target="_blank" rel="noopener">Gizlilik politikası</a>
+            <a class="ikincil" href="mailto:ehliyethazirlikapp@gmail.com">Destek</a>
+          </div>
+        </div>
+        <div class="kart-gorsel">
+          <div class="telefon"><img src="img/ehliyet-ekran.webp" alt="Ehliyet Sınav Soruları uygulamasının ana sayfası" width="540" height="1152" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="kart matchlingo" id="matchlingo">
+        <div class="kart-metin">
+          <img class="uygulama-simgesi" src="img/matchlingo-simge.png" alt="" width="76" height="76">
+          <h2>MatchLingo: İngilizce Kelime</h2>
+          <p>5.481 İngilizce kelimeyi eşleştirerek öğren. Aralıklı tekrarla kalıcı olsun.</p>
+          <ul class="ozellikler" aria-label="Öne çıkanlar">
+            <li>5.481 kelime</li>
+            <li>A1'den C1'e</li>
+            <li>Aralıklı tekrar</li>
+            <li>Sesli telaffuz</li>
+          </ul>
+          <div class="eylemler">
+            <a class="dugme" href="https://play.google.com/store/apps/details?id=com.matchlingo.matchlingo" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z" fill="currentColor"/></svg>
+              Google Play'de aç
+            </a>
+            <a class="ikincil" href="https://docs.google.com/document/d/1m84-GH1-DL28MEF9fxzeXiFFTlClq2Cbz8tnko7epeQ/edit?usp=sharing" target="_blank" rel="noopener">Gizlilik politikası</a>
+            <a class="ikincil" href="mailto:matchlingoapp@gmail.com">Destek</a>
+          </div>
+        </div>
+        <div class="kart-gorsel">
+          <div class="telefon"><img src="img/matchlingo-ekran.webp" alt="MatchLingo uygulamasında kelime eşleştirme oyunu" width="540" height="1152" loading="lazy"></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="iletisim" class="iletisim">
+      <div class="kap">
+        <h2>İletişim</h2>
+        <p>Uygulamalarla ilgili soru, öneri ya da hata bildirimi için e-posta gönderebilirsin.</p>
+        <div class="posta">
+          <a href="mailto:ehliyethazirlikapp@gmail.com">
+            <img src="img/ehliyet-simge.png" alt="" width="48" height="48">
+            <div><strong>Ehliyet Sınav Soruları</strong><span>ehliyethazirlikapp@gmail.com</span></div>
+          </a>
+          <a href="mailto:matchlingoapp@gmail.com">
+            <img src="img/matchlingo-simge.png" alt="" width="48" height="48">
+            <div><strong>MatchLingo</strong><span>matchlingoapp@gmail.com</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="alt-bilgi">
+    <div class="kap">
+      <span>© 2026 Nurullah Aşcı</span>
+      <nav aria-label="Bağlantılar">
+        <a href="https://play.google.com/store/apps/dev?id=5654832830249747431" target="_blank" rel="noopener">Google Play'deki uygulamalarım</a>
+        <a href="https://docs.google.com/document/d/1nLZ_UXNazdST61QQ2RB4babL6DCO1spSLlADLnbJuJg/edit?usp=sharing" target="_blank" rel="noopener">Gizlilik: Ehliyet</a>
+        <a href="https://docs.google.com/document/d/1m84-GH1-DL28MEF9fxzeXiFFTlClq2Cbz8tnko7epeQ/edit?usp=sharing" target="_blank" rel="noopener">Gizlilik: MatchLingo</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
