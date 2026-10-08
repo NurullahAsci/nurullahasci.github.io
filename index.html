@@ -123,6 +123,28 @@
   .telefon img { display: block; width: 100%; height: auto; border-radius: 31px; }
   .matchlingo .telefon { transform: rotate(-5deg); }
 
+  /* Ehliyet telefonunda üç ekran sırayla (12 sn'lik döngü): ana sayfa, sesli
+     dinle, 50:50. Ana sayfa hep altta duruyor; öteki ikisi üstünde belirip
+     kayboluyor. Ekrandaki özelliğin etiketi o sırada parlıyor. */
+  .telefon.donen { position: relative; }
+  .telefon.donen img + img { position: absolute; top: 9px; left: 9px; width: calc(100% - 18px); opacity: 0; }
+  .telefon.donen img:nth-child(2) { animation: ekran-sesli 12s infinite; }
+  .telefon.donen img:nth-child(3) { animation: ekran-elli 12s infinite; }
+  .ehliyet .ozellikler li:nth-child(3) { animation: etiket-sesli 12s infinite; }
+  .ehliyet .ozellikler li:nth-child(4) { animation: etiket-elli 12s infinite; }
+  /* Kartın üstüne gelince döngü durur: ekrana bakmak isteyen bakabilsin. */
+  .kart.ehliyet:hover .telefon.donen img, .kart.ehliyet:hover .ozellikler li { animation-play-state: paused; }
+  @keyframes ekran-sesli { 0%, 33.33% { opacity: 0; } 38.33%, 71.66% { opacity: 1; } 71.67%, 100% { opacity: 0; } }
+  @keyframes ekran-elli { 0%, 66.67% { opacity: 0; } 71.67%, 95% { opacity: 1; } 100% { opacity: 0; } }
+  @keyframes etiket-sesli {
+    0%, 33.33%, 71.67%, 100% { background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .18); color: #fff; }
+    38.33%, 66.67% { background: rgba(254, 206, 47, .22); border-color: rgba(254, 206, 47, .85); color: #FFE28A; }
+  }
+  @keyframes etiket-elli {
+    0%, 66.67%, 100% { background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .18); color: #fff; }
+    71.67%, 95% { background: rgba(254, 206, 47, .22); border-color: rgba(254, 206, 47, .85); color: #FFE28A; }
+  }
+
   /* İletişim */
   .iletisim { padding: 56px 0 24px; }
   .iletisim h2 { margin: 0 0 8px; font-size: clamp(28px, 3.6vw, 38px); letter-spacing: -.025em; font-weight: 850; }
@@ -147,7 +169,8 @@
   @media (max-width: 860px) {
     .kart { grid-template-columns: 1fr; min-height: 0; }
     .kart-metin { padding: 32px 24px 8px; }
-    .kart-gorsel { padding-top: 28px; height: 330px; overflow: hidden; }
+    /* Yükseklik, 50:50 ekranındaki silinmiş iki şık görünecek kadar. */
+    .kart-gorsel { padding-top: 28px; height: 440px; overflow: hidden; }
     .telefon { width: 240px; margin-bottom: 0; }
     .posta { grid-template-columns: 1fr; }
     .giris { padding-top: 48px; }
@@ -160,6 +183,8 @@
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     * { transition: none !important; }
+    /* Dönen ekranlar durur: yalnızca ana sayfa görünür. */
+    .telefon.donen img + img, .ehliyet .ozellikler li { animation: none !important; }
   }
 </style>
 </head>
@@ -215,7 +240,11 @@
           </div>
         </div>
         <div class="kart-gorsel">
-          <div class="telefon"><img src="img/ehliyet-ekran.webp" alt="Ehliyet Sınav Soruları uygulamasının ana sayfası" width="540" height="1152" loading="lazy"></div>
+          <div class="telefon donen">
+            <img src="img/ehliyet-ekran.webp" alt="Ehliyet Sınav Soruları uygulamasının ana sayfası" width="540" height="1152" loading="lazy">
+            <img src="img/ehliyet-sesli.webp" alt="Konu anlatımı sesli okunurken: okunan paragraf işaretli" width="540" height="1152" loading="lazy">
+            <img src="img/ehliyet-elli.webp" alt="Denemede 50:50: iki yanlış şık silinmiş" width="540" height="1152" loading="lazy">
+          </div>
         </div>
       </article>
 
