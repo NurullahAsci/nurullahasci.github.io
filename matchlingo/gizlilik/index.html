@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası · MatchLingo: İngilizce Kelime</title>
+<meta name="description" content="MatchLingo: İngilizce Kelime uygulamasının gizlilik politikası: telefonda kalan bilgiler, Google AdMob reklamları ve seçeneklerin.">
+<link rel="canonical" href="https://nurullahasci.github.io/matchlingo/gizlilik/">
+<meta name="theme-color" content="#F6F4EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1117" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='14' width='34' height='34' rx='10' fill='%23FECE2F'/%3E%3Crect x='26' y='6' width='34' height='34' rx='10' fill='%235E17EB'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --zemin: #F6F4EF;
+    --yuzey: #FFFFFF;
+    --cizgi: #E6E1D6;
+    --murekkep: #151B26;
+    --murekkep-2: #4A5566;
+    --golge: 0 1px 2px rgba(21, 27, 38, .06), 0 12px 32px rgba(21, 27, 38, .08);
+    --sari: #FECE2F;
+    --lacivert: #14304D;
+    --vurgu: #1F4470;
+    --yazi: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --zemin: #0D1117;
+      --yuzey: #161B24;
+      --cizgi: #252C38;
+      --murekkep: #EEF1F5;
+      --murekkep-2: #A7B0BE;
+      --golge: 0 1px 2px rgba(0, 0, 0, .4), 0 12px 32px rgba(0, 0, 0, .35);
+      --vurgu: #9DBFEE;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body {
+    margin: 0;
+    font-family: var(--yazi);
+    color: var(--murekkep);
+    background: var(--zemin);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .kap { width: min(1120px, 100% - 32px); margin-inline: auto; }
+
+  /* Üst çubuk (ana sayfayla aynı) */
+  .ust {
+    position: sticky; top: 0; z-index: 10;
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    background: color-mix(in srgb, var(--zemin) 78%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--cizgi) 70%, transparent);
+  }
+  .ust .kap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+  .marka { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -.01em; text-decoration: none; font-size: 17px; }
+  .marka svg { flex: none; }
+  .ust nav { display: flex; gap: 4px; }
+  .ust nav a { text-decoration: none; font-weight: 600; font-size: 15px; color: var(--murekkep-2); padding: 8px 12px; border-radius: 999px; }
+  .ust nav a:hover { color: var(--murekkep); background: color-mix(in srgb, var(--murekkep) 7%, transparent); }
+
+  /* Metin */
+  .sayfa { width: min(760px, 100% - 32px); margin-inline: auto; padding: 48px 0 24px; }
+  .baslik { display: flex; align-items: center; gap: 18px; }
+  .baslik img { width: 64px; height: 64px; border-radius: 17px; box-shadow: var(--golge); flex: none; }
+  h1 { margin: 0; font-size: clamp(32px, 5vw, 44px); line-height: 1.08; letter-spacing: -.03em; font-weight: 850; }
+  .tarih { margin: 6px 0 0; color: var(--murekkep-2); font-size: 15px; }
+  .giris-metni { margin: 28px 0 0; font-size: 18px; }
+
+  .ozet {
+    margin: 28px 0 8px; padding: 20px 24px; border-radius: 22px;
+    background: var(--yuzey); border: 1px solid var(--cizgi); box-shadow: var(--golge);
+    border-left: 6px solid var(--sari);
+  }
+  .ozet h2 { margin: 0 0 8px; font-size: 18px; letter-spacing: 0; }
+  .ozet ul { margin: 0; }
+
+  h2 { margin: 40px 0 10px; font-size: 24px; line-height: 1.2; letter-spacing: -.015em; font-weight: 800; }
+  h3 { margin: 24px 0 6px; font-size: 18px; font-weight: 800; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin: 4px 0; }
+  li::marker { color: var(--murekkep-2); }
+  .metin a { color: var(--vurgu); text-underline-offset: 3px; }
+  .yol { font-weight: 700; white-space: nowrap; }
+
+  .dil {
+    margin: 56px 0 0; padding-top: 32px; border-top: 1px solid var(--cizgi);
+  }
+  .dil-etiketi { display: inline-block; margin: 0 0 16px; font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+    color: var(--murekkep-2); padding: 5px 11px; border: 1px solid var(--cizgi); border-radius: 999px; background: var(--yuzey); }
+
+  /* Alt (ana sayfayla aynı) */
+  .alt-bilgi { padding: 40px 0 48px; color: var(--murekkep-2); font-size: 14px; }
+  .alt-bilgi .kap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; border-top: 1px solid var(--cizgi); padding-top: 24px; }
+  .alt-bilgi a { text-decoration: none; font-weight: 600; }
+  .alt-bilgi a:hover { color: var(--murekkep); text-decoration: underline; }
+  .alt-bilgi nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+
+  a:focus-visible { outline: 3px solid #8F6BFF; outline-offset: 3px; }
+
+  @media (max-width: 560px) {
+    .sayfa { padding-top: 32px; }
+    .baslik img { width: 52px; height: 52px; border-radius: 14px; }
+    .giris-metni { font-size: 17px; }
+    .ozet { padding: 16px 18px; }
+    .yol { white-space: normal; }
+    .ust nav a { padding: 8px 9px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+  <header class="ust">
+    <div class="kap">
+      <a class="marka" href="/">
+        <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="14" width="34" height="34" rx="10" fill="#FECE2F"/><rect x="26" y="6" width="34" height="34" rx="10" fill="#5E17EB"/></svg>
+        Nurullah Aşcı
+      </a>
+      <nav aria-label="Dil">
+        <a href="#tr" lang="tr">Türkçe</a>
+        <a href="#en" lang="en">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="sayfa metin">
+    <section id="tr" lang="tr">
+      <div class="baslik">
+        <img src="/img/matchlingo-simge.png" alt="" width="64" height="64">
+        <div>
+          <h1>Gizlilik Politikası</h1>
+          <p class="tarih">MatchLingo: İngilizce Kelime · Son güncelleme: 16 Ekim 2026</p>
+        </div>
+      </div>
+
+      <p class="giris-metni">Bu politika, MatchLingo: İngilizce Kelime uygulamasının hangi bilgileri nasıl kullandığını anlatır. Uygulamada hesap yok; senden isim, e-posta ya da telefon numarası istemiyoruz. Bizim bir sunucumuz yok.</p>
+
+      <div class="ozet">
+        <h2>Kısaca</h2>
+        <ul>
+          <li>Çalışmaların (kelimelerin kutuları ve tekrar tarihleri, gün serin, ayarların) yalnızca telefonunda durur, bize gönderilmez.</li>
+          <li>Reklamlar Google AdMob'dan gelir. AdMob reklam kimliği gibi cihaz kimlikleri ve kullanım bilgisi toplar.</li>
+          <li>Avrupa'da reklamlar için önce izin sorulur.</li>
+          <li>Bilgilerini satmayız.</li>
+        </ul>
+      </div>
+
+      <h2>Telefonunda kalan bilgiler</h2>
+      <p>Uygulama şunları yalnızca telefonundaki veritabanında tutar:</p>
+      <ul>
+        <li>Çalıştığın kelimeler: hangi kutuda oldukları, bir sonraki tekrar tarihleri, kaç kez doğru ya da yanlış bildiğin</li>
+        <li>Günlük çalışma sayıların, gün serin ve seri koruma hakların</li>
+        <li>Canların ve sıradaki canın geleceği zaman</li>
+        <li>Ayarların (ses, titreşim, tema, dil, günlük hedef, hatırlatma saati) ve hatırlatma teklifine verdiğin cevap</li>
+      </ul>
+      <p>Bu bilgiler bize ya da başkasına gönderilmez. Uygulamayı silince ya da uygulama verisini temizleyince hepsi silinir. Telefonunda Google yedeklemesi açıksa Android bu bilgileri senin Google hesabındaki yedeğe alabilir ve uygulamayı yeniden kurduğunda geri yükleyebilir; o yedek senin hesabındadır, bizim erişimimiz yoktur.</p>
+
+      <h2>Google'a giden bilgiler</h2>
+      <h3>Reklamlar (Google AdMob)</h3>
+      <p>Uygulamada ekranın altında bir reklam bandı ve isteğe bağlı ödüllü reklamlar (canları doldurmak, seri koruma kazanmak) var. AdMob, reklamı göstermek, ölçmek ve sahtekârlığı önlemek için şunları toplar ve Google ile paylaşır: Android reklam kimliği ve uygulama grubu kimliği gibi cihaz kimlikleri, IP adresi (yaklaşık konumu kestirmek için), cihaz ve uygulama bilgileri, uygulamayla ve reklamlarla etkileşimin (açılış, dokunma, reklam izleme), tanılama bilgileri (açılış süresi, takılma oranı gibi). İzin varsa reklamlar ilgi alanına göre kişiselleştirilebilir.</p>
+      <p>Google'ın bu bilgileri nasıl kullandığı: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google, iş ortaklarının uygulamalarını kullandığınızda verileri nasıl kullanır</a>. Bilgiler Google'a şifreli bağlantıyla (TLS) gider ve Türkiye dışındaki sunucularda işlenebilir.</p>
+      <p>Uygulamanın kendisi kullanım istatistiği toplamaz; analiz aracı yoktur.</p>
+
+      <h2>Avrupa'daki kullanıcılar</h2>
+      <p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de uygulama ilk açılışta Google'ın onay formunu gösterir. "İzin vermeyin" dersen reklamlar kişiselleştirilmez. Kararını değiştirmek için şimdilik uygulamada ayrı bir ayar yok: uygulamanın verisini telefonun ayarlarından temizlersen form bir sonraki açılışta yeniden gösterilir (bu, uygulamadaki ilerlemeni de siler).</p>
+
+      <h2>Kullanılan diğer özellikler</h2>
+      <ul>
+        <li><strong>Bildirimler:</strong> Günlük hatırlatma ve seri uyarısı telefonunda kurulur, sunucudan gönderilmez. İzni ana ekrandaki teklifte ya da Ayarlar'da verir veya kapatırsın.</li>
+        <li><strong>Telaffuz:</strong> İngilizce kelimeyi telefonunun metin okuma motoru okur. İnternetli seslerde motor, okunacak kelimeyi kendi sunucusuna gönderebilir; gönderilen yalnızca o kelimedir.</li>
+        <li><strong>Paylaş, Değerlendir, Instagram:</strong> Telefonunun paylaşma ekranını, Google Play'i ya da Instagram'ı açar. Oralarda yaptıkların o hizmetlerin kendi gizlilik politikalarına tabidir.</li>
+      </ul>
+
+      <h2>Seçeneklerin</h2>
+      <ul>
+        <li>Reklam kimliğini sıfırlamak ya da silmek: telefonun ayarlarında <span class="yol">Google → Reklamlar</span> (bazı telefonlarda <span class="yol">Gizlilik → Reklamlar</span>).</li>
+        <li>Bildirimler: uygulamada <span class="yol">Ayarlar → Günlük hatırlatma</span> ve <span class="yol">Seri uyarısı</span>, ya da telefonun ayarları.</li>
+        <li>İlerlemeni silmek: uygulamada <span class="yol">Ayarlar → Verileri temizle</span>.</li>
+        <li>Uygulamayı silmek, telefondaki bütün verilerini siler.</li>
+      </ul>
+
+      <h2>Çocuklar</h2>
+      <p>Uygulama 13 yaşından küçük çocuklar için tasarlanmadı. Bilerek çocuklardan kişisel bilgi toplamayız.</p>
+
+      <h2>KVKK kapsamındaki hakların</h2>
+      <p>Veri sorumlusu: Nurullah Aşcı, <a href="mailto:matchlingoapp@gmail.com">matchlingoapp@gmail.com</a>. 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 11. maddesindeki hakların (bilgi isteme, düzeltme, silme, itiraz) için bize e-postayla yazabilirsin. Telefonunda kalan bilgilere bizim erişimimiz yok; Google'daki kayıtlar için yukarıdaki seçenekleri kullanabilir ya da bize yazabilirsin.</p>
+
+      <h2>Değişiklikler</h2>
+      <p>Bu politika değişirse bu sayfa güncellenir ve üstteki tarih değişir.</p>
+
+      <h2>İletişim</h2>
+      <p><a href="mailto:matchlingoapp@gmail.com">matchlingoapp@gmail.com</a></p>
+    </section>
+
+    <section id="en" class="dil" lang="en">
+      <p class="dil-etiketi">English</p>
+      <h1>Privacy Policy</h1>
+      <p class="tarih">MatchLingo: İngilizce Kelime · Last updated: 16 October 2026</p>
+
+      <p class="giris-metni">This policy explains what information the MatchLingo: İngilizce Kelime app uses and how. The app has no accounts; we do not ask for your name, email address or phone number. We do not run any servers.</p>
+
+      <div class="ozet">
+        <h2>In short</h2>
+        <ul>
+          <li>Your study data (word boxes and review dates, your streak, your settings) stays on your phone and is never sent to us.</li>
+          <li>Ads are served by Google AdMob. AdMob collects device identifiers such as the advertising ID, and usage information.</li>
+          <li>In Europe you are asked for consent for ads first.</li>
+          <li>We do not sell your information.</li>
+        </ul>
+      </div>
+
+      <h2>Information that stays on your phone</h2>
+      <p>The app keeps the following only in a database on your phone:</p>
+      <ul>
+        <li>The words you study: which box each one is in, when it is due for review, how often you got it right or wrong</li>
+        <li>Your daily word counts, your streak and your streak freezes</li>
+        <li>Your lives and when the next one comes back</li>
+        <li>Your settings (sound, vibration, theme, language, daily goal, reminder time) and your answer to the reminder offer</li>
+      </ul>
+      <p>None of this is sent to us or anyone else. Uninstalling the app or clearing its data deletes it all. If Google backup is turned on on your phone, Android may include this data in the backup in your Google account and restore it when you reinstall the app; that backup is in your account and we cannot access it.</p>
+
+      <h2>Information sent to Google</h2>
+      <h3>Ads (Google AdMob)</h3>
+      <p>The app shows a banner ad at the bottom of the screen and optional rewarded ads (to refill lives or earn a streak freeze). To show and measure ads and to prevent fraud, AdMob collects and shares with Google: device identifiers such as the Android advertising ID and app set ID, your IP address (to estimate your approximate location), device and app information, your interactions with the app and with ads (app launches, taps, ad views), and diagnostic information (such as launch time and hang rate). Where you have consented, ads may be personalised.</p>
+      <p>How Google uses this information: <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites?hl=en" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a>. Data travels to Google over an encrypted connection (TLS) and may be processed on servers outside Turkey.</p>
+      <p>The app itself collects no usage statistics; there is no analytics tool.</p>
+
+      <h2>Users in Europe</h2>
+      <p>In the European Economic Area, the United Kingdom and Switzerland the app shows Google's consent form on first launch. If you choose "Do not consent", ads are not personalised. There is currently no separate setting in the app to change your choice: if you clear the app's data in your phone's settings, the form is shown again on the next launch (this also deletes your progress in the app).</p>
+
+      <h2>Other features</h2>
+      <ul>
+        <li><strong>Notifications:</strong> The daily reminder and the streak alert are scheduled on your phone, not sent from a server. You grant or revoke the permission in the offer on the home screen or in Settings.</li>
+        <li><strong>Pronunciation:</strong> Your phone's text-to-speech engine reads the English word aloud. With online voices, the engine may send the word to its own server; only that word is sent.</li>
+        <li><strong>Share, Rate, Instagram:</strong> These open your phone's share sheet, Google Play or Instagram. What you do there is covered by those services' own privacy policies.</li>
+      </ul>
+
+      <h2>Your choices</h2>
+      <ul>
+        <li>Reset or delete your advertising ID: in your phone's settings under <span class="yol">Google → Ads</span> (on some phones <span class="yol">Privacy → Ads</span>).</li>
+        <li>Notifications: in the app under <span class="yol">Settings → Daily reminder</span> and <span class="yol">Streak alert</span>, or in your phone's settings.</li>
+        <li>Delete your progress: in the app under <span class="yol">Settings → Clear data</span>.</li>
+        <li>Uninstalling the app deletes all of your data on the phone.</li>
+      </ul>
+
+      <h2>Children</h2>
+      <p>The app is not designed for children under 13. We do not knowingly collect personal information from children.</p>
+
+      <h2>Your rights</h2>
+      <p>Controller: Nurullah Aşcı, <a href="mailto:matchlingoapp@gmail.com">matchlingoapp@gmail.com</a>. You can email us to exercise your rights under Turkish data protection law (KVKK, Law No. 6698, Article 11) or the GDPR: access, correction, deletion and objection. We cannot access the information on your phone; for Google's records, use the choices above or write to us.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, this page is updated and the date at the top changes.</p>
+
+      <h2>Contact</h2>
+      <p><a href="mailto:matchlingoapp@gmail.com">matchlingoapp@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="alt-bilgi">
+    <div class="kap">
+      <span>© 2026 Nurullah Aşcı</span>
+      <nav aria-label="Bağlantılar">
+        <a href="/">Uygulamalar</a>
+        <a href="https://play.google.com/store/apps/details?id=com.matchlingo.matchlingo" target="_blank" rel="noopener">Google Play</a>
+        <a href="mailto:matchlingoapp@gmail.com">matchlingoapp@gmail.com</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
